@@ -2,8 +2,8 @@ name: Docker Build and Push
 
 on:
   push:
-    branches-ignore:
-      - main  # Change this to your main branch"
+    branches:
+      - main
 
 jobs:
   build:
