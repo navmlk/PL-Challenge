@@ -45,7 +45,7 @@ Challenge: Setting Up Kubernetes Locally
 Solution: Minikube provided a straightforward solution for setting up a local Kubernetes cluster. It allowed for quick testing of deployments and services without the need for a dedicated cloud or on-premises Kubernetes cluster.
 - Initially I was getting anything working at all because GITHub self hosted runner kept complaining about Docker Daemon not running, turns out to be Dokcer insallation itself was corrupted.
 - Minikube wasnt responding to any requests (I kept getting connection refused error), had to delete minikube altogether and reinstalled it with minikube ` start --driver=hyperv `
-- Also had to run cmd as administrator and run ` minikube tunnel`
+- Also had to run cmd as administrator and run ` minikube tunnel `
 
 Challenge: Containerizing Flask App
 Solution: Docker was used to containerize the Flask application. This ensured consistent deployment across different environments and simplified the integration with Minikube and GitHub Actions.
